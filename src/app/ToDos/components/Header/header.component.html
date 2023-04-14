@@ -1,0 +1,7 @@
+<header class="header">
+    <div class="form-floating border rounded-4">
+        <input type="text" class="form-control" id="todoText" placeholder="Enter Task"  [value]="text"
+            (keyup)="changeText($event)" (keyup.enter)="addTodo()" >
+        <label for="todoText">What needs to be done?</label>
+    </div>
+</header>
